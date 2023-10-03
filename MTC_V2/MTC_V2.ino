@@ -1,3 +1,10 @@
+/*
+  Devin Hernandez
+  Sophomore Project Lab
+  PV-IES
+  10/2/23
+*/
+
 int potPin = A0;
 int ledPin = 9;
 int ledPinGreen = 10;
