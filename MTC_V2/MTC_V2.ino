@@ -20,11 +20,12 @@ void loop() {
   int potValue = analogRead(potPin);
   int brightness = map(potValue, 0, 1023, 0, 255);
   int brightnessGreen = map(potValue, 0, 1023, 255, 0);
+  //int brightnessGreen = (brightness*-1)+256;
   Serial.print(brightness);
   Serial.print(" ");
   Serial.println(brightnessGreen);
 
   analogWrite(ledPin, brightness);
   analogWrite(ledPinGreen, brightnessGreen);
-  delay(10);
+  //delay(1);
 }
