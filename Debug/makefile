@@ -4,8 +4,6 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS
-
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
 
@@ -142,15 +140,15 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 PWM_MSP432.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --advice:power=all --define=__MSP432P401R__ --define=ccs -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"PWM_MSP432.map" --heap_size=1024 --stack_size=512 -i"C:/ti/ccs1011/ccs/ccs_base/arm/include" -i"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="PWM_MSP432_linkInfo.xml" --rom_model -o "PWM_MSP432.out" $(ORDERED_OBJS)
+	"" -z -m"PWM_MSP432.map" --heap_size=1024 --stack_size=512 -i"C:/ti/ccs1120/ccs/ccs_base/arm/include" -i"/lib" -i"/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="PWM_MSP432_linkInfo.xml" --rom_model -o "PWM_MSP432.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 PWM_MSP432.hex: $(EXE_OUTPUTS)
-	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: ARM Hex Utility'
-	"C:/ti/ccs1011/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex" --memwidth=8 --romwidth=8 -o "PWM_MSP432.hex" $(EXE_OUTPUTS__QUOTED)
-	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
+	"" --memwidth=8 --romwidth=8 --diag_wrap=off -o "PWM_MSP432.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
 # Other Targets
