@@ -9,6 +9,11 @@
   It will be modified to take a control voltage from a Solar Panel to properly control a battery's output.
 
   Most of the code here is credited to John Wasser and Koepel, both from the Arduino Forum.
+
+  Pins used:
+    D9    PWM logic HIGH output
+    D10   PWM Logic LOW output - is the compliment of D9
+    A0    Analog input for the potentiometer - controls the PWM output of D9
 */
 
 const unsigned TOP = 16000;
@@ -46,19 +51,10 @@ void setup() {
 void loop() {
   int sensorValue = analogRead(A0); //pull in a value based on potentiometer
   float voltage = sensorValue * (5.0 / 1023.0);  //change that value to range from 0 - 5
-  Serial.print(voltage);
-  Serial.print(" ");
-  //int voltage1000 = voltage * 1000;
-  //Serial.println(voltage1000);
   int voltMap = voltage * (16000 / 5); //change voltage from 0 - 5 to 0 - 16k
-  Serial.println(voltMap);
 
-  OCR1A = delta + voltMap;
+  OCR1A = delta + voltMap; //add the value calulated from the potentiometer input to the compare registers.
   OCR1B = delta + voltMap;
-
-  Serial.print(OCR1A);
-  Serial.print(" ");
-  Serial.println(OCR1B);
 
   delay(1);
 }
