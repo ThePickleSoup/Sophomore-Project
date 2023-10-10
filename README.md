@@ -10,15 +10,31 @@ My role is the group is Designer. My tasks are to create the code and CAD deisgn
 The current Arduino code that is being employed is titled: MTC_V3, and is on version 0.3.0.
 
 Tasks for code:
-  Create an alternating PWM signal that at 500Hz                                         > done
-  Create code to employ MPPT to control a DC-DC converter                                > 0%
-  Create code to control LEDs either for battery level indicator or PV status indicator  > 0%
-  Create code to display to 16x2 LCD screen                                              > 0%
+  
+  Create an alternating PWM signal that at 500Hz                                         
+    > done
+  
+  Create code to employ MPPT to control a DC-DC converter                                
+    > Incomplete
+  
+  Create code to control LEDs either for battery level indicator or PV status indicator  
+    > Incomplete
+  
+  Create code to display to 16x2 LCD screen                                              
+    > Incomplete
 
 Tasks for PCB design
-  Decide what PCB deisgn software to use  > 0% 
-  Design it(?)                            > 0%
+  
+  Decide what PCB deisgn software to use  
+    > Incomplete 
+  
+  Design it(?)                            
+    > Incomplete
 
 Tasks for CAD Design
-  Learn Solidworks                        > 0%
-  Take Design an enclosure or a stand     > 0%
+  
+  Learn Solidworks                        
+    > Incomplete
+  
+  Take Design an enclosure or a stand     
+    > Incomplete
