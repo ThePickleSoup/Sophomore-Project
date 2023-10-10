@@ -18,15 +18,19 @@
     A0    Analog input for the potentiometer - controls the PWM output of D9
 
 
-  Software Version: 0.3.0  
+  Software Version: 0.3.1  
   Changelog:
       > 0.3.0
         -Created Program
+      > 0.3.1
+        -Removed "delta," an unneeded variable
+        -Removed the delay at the end of the loop
+        -Added constrain() functions for stability
+
 
 */
 
 const unsigned TOP = 16000;
-int delta;
 
 void setup() {
   Serial.begin(115200);
@@ -58,12 +62,16 @@ void setup() {
 }
 
 void loop() {
-  int sensorValue = analogRead(A0); //pull in a value based on potentiometer
-  float voltage = sensorValue * (5.0 / 1023.0);  //change that value to range from 0 - 5
-  int voltMap = voltage * (16000 / 5); //change voltage from 0 - 5 to 0 - 16k
+  int sensorValue = analogRead(A0); // pull in a value based on potentiometer
+  float voltage = sensorValue * (5.0 / 1023.0);  // change that value to range from 0 - 5
+  int voltMap = voltage * (16000 / 5); // change voltage from 0 - 5 to 0 - 16k
 
-  OCR1A = delta + voltMap; //add the value calulated from the potentiometer input to the compare registers.
-  OCR1B = delta + voltMap;
+  // add the value calulated from the potentiometer input to the compare registers.
+  OCR1A = voltMap - 8; 
+  OCR1B = voltMap + 8;
 
-  delay(1);
+  // constrain values to a range of 0 - 16k
+  OCR1A = constrain(OCR1A, 0, TOP);
+  OCR1B = constrain(OCR1B, 0, TOP); 
+  //delay(1);
 }
