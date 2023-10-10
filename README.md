@@ -1,5 +1,6 @@
 # Sophomore-Project
 Repository for Sophomore Project Lab course
+licensed under the GNU General Public License v3.0
 
 The following documents are an assortment of files created for my Sophomore Project course.
 We are working on designing a PV-Integrated Energy Source.
