@@ -14,6 +14,8 @@
         -Created Program
 
 */
+#include <TimerOne.h>
+
 // Define analog pins for voltage and current measurements
 const int voltagePin = A0;
 const int currentPin = A1;
@@ -21,10 +23,6 @@ const int currentPin = A1;
 // Define the maximum and minimum voltage values for the solar panel
 const float Vmax = 22.0;  // Maximum voltage in Volts
 const float Vmin = 0.0;   // Minimum voltage in Volts
-
-// Define the maximum and minimum duty cycle for the DC-DC converter
-const int dutyCycleMax = 255;  // Maximum duty cycle
-const int dutyCycleMin = 0;    // Minimum duty cycle
 
 // Define variables to store voltage and current readings
 float voltage = 0.0;
@@ -37,9 +35,18 @@ int dutyCycle = 127; // Initial duty cycle
 void setup() {
   // Initialize serial communication
   Serial.begin(9600);
+
+  // Initialize Timer1
+  Timer1.initialize(1000);  // Set the timer to trigger every 1 second
+  Timer1.attachInterrupt(mpptControl); // Attach the interrupt function
+  Timer1.start();
 }
 
 void loop() {
+  // Main loop
+}
+
+void mpptControl() {
   // Measure the voltage and current
   voltage = analogRead(voltagePin) * (Vmax - Vmin) / 1023.0 + Vmin;
   current = analogRead(currentPin) * 5.0 / 1023.0;  // Assuming a 5A current sensor
@@ -57,13 +64,13 @@ void loop() {
   }
 
   // Limit the duty cycle within the allowed range
-  if (dutyCycle > dutyCycleMax) {
-    dutyCycle = dutyCycleMax;
-  } else if (dutyCycle < dutyCycleMin) {
-    dutyCycle = dutyCycleMin;
+  if (dutyCycle > 255) {
+    dutyCycle = 255;
+  } else if (dutyCycle < 0) {
+    dutyCycle = 0;
   }
 
-  // Update the duty cycle of the DC-DC converter
+  // Update the duty cycle using Timer1
   analogWrite(9, dutyCycle);  // Assuming the DC-DC converter is controlled using PWM on pin 9
 
   // Print the values for debugging
@@ -78,7 +85,6 @@ void loop() {
 
   // Store the current voltage for comparison in the next iteration
   previousVoltage = voltage;
+}
 
-  // You can add a delay here to control the loop rate if needed
-  delay(1000);  // Delay for 1 second
 }
