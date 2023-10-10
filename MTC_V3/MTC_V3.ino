@@ -4,8 +4,6 @@
   PV-IES System
   10/9/23
 
-  
-
   Third attempt to create an alternating PWM signal to control our gate driver. This time I am using timer registers instead of delays.
   This code is designed to work based in a control voltage that ranges from 0V - 5V. This control voltage comes from a potentiometer.
   It will be modified to take a control voltage from a Solar Panel to properly control a battery's output.
@@ -20,9 +18,9 @@
 
   Software Version: 0.3.1  
   Changelog:
-      > 0.3.0
+      > 0.3.0   10/9/23
         -Created Program
-      > 0.3.1
+      > 0.3.1   10/10/23
         -Removed "delta," an unneeded variable
         -Removed the delay at the end of the loop
         -Added constrain() functions for stability
