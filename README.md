@@ -5,4 +5,4 @@ The following documents are an assortment of files created for my Sophomore Proj
 We are working on designing a PV-Integrated Energy Source.
 > blah blah blah, insert something about what that is. look it up idk.
 
-The current Arduino code that is being employed is titled: MTC_V3
+The current Arduino code that is being employed is titled: MTC_V3, and is on version 0.3.0.
