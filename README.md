@@ -11,7 +11,7 @@ The current Arduino code that is being employed is titled: MTC_V3, and is on ver
 
 Tasks for code:
   
-  Create an alternating PWM signal that at 500Hz                                         
+  Create an alternating PWM signal at 500Hz                                         
     > done
   
   Create code to employ MPPT to control a DC-DC converter                                
