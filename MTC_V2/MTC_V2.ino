@@ -3,6 +3,8 @@
   Sophomore Project Lab
   PV-IES
   10/2/23
+
+  Software Version: 0.2.x
 */
 
 int potPin = A0;

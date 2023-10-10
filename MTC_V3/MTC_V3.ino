@@ -4,6 +4,8 @@
   PV-IES System
   10/9/23
 
+  
+
   Third attempt to create an alternating PWM signal to control our gate driver. This time I am using timer registers instead of delays.
   This code is designed to work based in a control voltage that ranges from 0V - 5V. This control voltage comes from a potentiometer.
   It will be modified to take a control voltage from a Solar Panel to properly control a battery's output.
@@ -14,6 +16,13 @@
     D9    PWM logic HIGH output
     D10   PWM Logic LOW output - is the compliment of D9
     A0    Analog input for the potentiometer - controls the PWM output of D9
+
+
+  Software Version: 0.3.0  
+  Changelog:
+      > 0.3.0
+        -Created Program
+
 */
 
 const unsigned TOP = 16000;
