@@ -49,7 +49,18 @@ void loop() {
   float voltage = sensorValue * (5.0 / 1023.0); // Map it to a range from 0 to 5
   int voltMap = voltage * (TOP / 5); // Map voltage from 0 to 5 to 0 to 16k
 
+  // Calculate the values for pins 9 and 10
+  int pwm9Value = constrain(voltMap - 8, 0, TOP);
+  int pwm10Value = TOP - pwm9Value; // Make pin 10 the inverse of pin 9
+
+  // Set the PWM values for pins 9 and 10
+  Timer1.pwm(9, pwm9Value);
+  Timer1.pwm(10, pwm10Value);
+  
   // Add the value calculated from the potentiometer input to the compare registers.
-  Timer1.pwm(9, constrain(voltMap - 8, 0, TOP));
-  Timer1.pwm(10, constrain(voltMap + 8, 0, TOP));
+  //Timer1.pwm(9, constrain(voltMap - 8, 0, TOP));
+  //Timer1.pwm(10, constrain(voltMap + 8, 0, TOP));
+  Serial.print(OCR1A);
+  Serial.print(" ");
+  Serial.println(OCR1B);
 }

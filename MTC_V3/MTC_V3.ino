@@ -71,5 +71,8 @@ void loop() {
   // constrain values to a range of 0 - 16k
   OCR1A = constrain(OCR1A, 0, TOP);
   OCR1B = constrain(OCR1B, 0, TOP); 
-  //delay(1);
+  Serial.print(OCR1A);
+  Serial.print(" ");
+  Serial.println(OCR1B);
+  delay(100);
 }
