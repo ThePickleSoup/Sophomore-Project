@@ -24,6 +24,8 @@
         -Removed "delta," an unneeded variable
         -Removed the delay at the end of the loop
         -Added constrain() functions for stability
+      > 0.3.2 10/31/23
+        -Attempted to define frequency
 
 
 */
@@ -43,6 +45,7 @@ void setup() {
   TCCR1A = 0;  // Timer/Counter1 Control Register A
   TCCR1B = 0;  // Timer/Counter1 Control Register B
   TIMSK1 = 0;  // Timer/Counter1 Interrupt Mask Register
+  //TCCR1B = TCCR1B & B11111000 | B00000001; //timer 1 PWM frequency of 31372.55 Hz
 
   // Set Timer/Counter1 to Waveform Generation Mode 8:
   // Phase and Frequency correct PWM with TOP set by ICR1
