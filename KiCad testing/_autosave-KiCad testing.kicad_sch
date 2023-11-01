@@ -1910,7 +1910,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "VS" (shape output) (at 106.68 100.33 270)
+  (global_label "VS_1" (shape output) (at 106.68 100.33 270)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 30eb5fc7-1848-4abf-b019-eda446b41fee)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 106.68 100.33 0)
@@ -2309,7 +2309,7 @@
   (symbol (lib_id "Diode:1N4148") (at 120.65 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006526989b)
-    (property "Reference" "D2" (at 120.65 42.3164 0)
+    (property "Reference" "D1" (at 120.65 42.3164 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148" (at 120.65 40.005 0)
@@ -2326,7 +2326,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "D2") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -2413,7 +2413,7 @@
   (symbol (lib_id "KiCad testing-rescue:CP1-Device") (at 85.09 58.42 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000653cd769)
-    (property "Reference" "C6" (at 88.011 57.2516 0)
+    (property "Reference" "C1" (at 88.011 57.2516 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10uF" (at 88.011 59.563 0)
@@ -2430,7 +2430,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "C6") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -2465,7 +2465,7 @@
   (symbol (lib_id "Device:R_US") (at 106.68 38.1 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000653d0257)
-    (property "Reference" "R5" (at 101.473 38.1 90)
+    (property "Reference" "R2" (at 101.473 38.1 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 103.7844 38.1 90)
@@ -2482,7 +2482,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "R5") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -2557,7 +2557,7 @@
   (symbol (lib_id "Device:R_US") (at 101.6 88.9 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000065459c2c)
-    (property "Reference" "R4" (at 101.6 83.693 90)
+    (property "Reference" "R6" (at 101.6 83.693 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "20" (at 101.6 86.0044 90)
@@ -2574,7 +2574,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "R4") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -2583,7 +2583,7 @@
   (symbol (lib_id "KiCad testing-rescue:CP1-Device") (at 85.09 113.03 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000065459c39)
-    (property "Reference" "C7" (at 88.011 111.8616 0)
+    (property "Reference" "C5" (at 88.011 111.8616 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10uF" (at 88.011 114.173 0)
@@ -2600,7 +2600,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "C7") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -2635,7 +2635,7 @@
   (symbol (lib_id "Device:R_US") (at 106.68 92.71 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000065459c50)
-    (property "Reference" "R6" (at 101.473 92.71 90)
+    (property "Reference" "R5" (at 101.473 92.71 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 103.7844 92.71 90)
@@ -2652,7 +2652,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "R6") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -2661,7 +2661,7 @@
   (symbol (lib_id "Device:R_US") (at 100.33 109.22 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000065459c56)
-    (property "Reference" "R2" (at 100.33 114.427 90)
+    (property "Reference" "R4" (at 100.33 114.427 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "20" (at 100.33 112.1156 90)
@@ -2678,7 +2678,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "R2") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2713,7 +2713,7 @@
   (symbol (lib_id "KiCad testing-rescue:CP1-Device") (at 123.19 82.55 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000065459c74)
-    (property "Reference" "C11" (at 126.111 81.3816 0)
+    (property "Reference" "C7" (at 126.111 81.3816 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100uF" (at 126.111 83.693 0)
@@ -2730,7 +2730,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "C11") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -2739,7 +2739,7 @@
   (symbol (lib_id "KiCad testing-rescue:CP1-Device") (at 113.03 96.52 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000065459c82)
-    (property "Reference" "C10" (at 111.8616 93.599 0)
+    (property "Reference" "C6" (at 111.8616 93.599 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10uF" (at 114.173 93.599 0)
@@ -2756,7 +2756,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "C10") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -2765,7 +2765,7 @@
   (symbol (lib_id "Diode:1N4148") (at 120.65 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000065459c90)
-    (property "Reference" "D3" (at 120.65 96.9264 0)
+    (property "Reference" "D2" (at 120.65 96.9264 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148" (at 120.65 94.615 0)
@@ -2782,7 +2782,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "D3") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -2871,7 +2871,7 @@
   (symbol (lib_id "KiCad testing-rescue:CP1-Device") (at 175.26 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000654821a9)
-    (property "Reference" "C2" (at 178.181 43.2816 0)
+    (property "Reference" "C9" (at 178.181 43.2816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47uF" (at 178.181 45.593 0)
@@ -2888,7 +2888,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "C2") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -2897,7 +2897,7 @@
   (symbol (lib_id "Diode:1N4002") (at 220.98 44.45 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006548b8ca)
-    (property "Reference" "D5" (at 226.4664 44.45 0)
+    (property "Reference" "D3" (at 226.4664 44.45 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4002" (at 224.155 44.45 0)
@@ -2914,7 +2914,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "D5") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -2923,7 +2923,7 @@
   (symbol (lib_id "KiCad testing-rescue:CP1-Device") (at 233.68 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006548d40c)
-    (property "Reference" "C12" (at 236.601 43.2816 0)
+    (property "Reference" "C10" (at 236.601 43.2816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470uF" (at 236.601 45.593 0)
@@ -2940,7 +2940,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "C12") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -3054,7 +3054,7 @@
   (symbol (lib_id "KiCad testing-rescue:CP1-Device") (at 170.18 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 50228d89-0168-4362-b7b1-267306d3aeb1)
-    (property "Reference" "C5" (at 173.101 78.8416 0)
+    (property "Reference" "C12" (at 173.101 78.8416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47uF" (at 173.101 81.153 0)
@@ -3071,7 +3071,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "C5") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -3080,7 +3080,7 @@
   (symbol (lib_id "KiCad testing-rescue:CP1-Device") (at 213.36 80.01 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 584c2103-82ab-4f14-9ae9-1fd20c3f8cc0)
-    (property "Reference" "C1" (at 210.439 81.1784 0)
+    (property "Reference" "C11" (at 210.439 81.1784 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47uF" (at 210.439 78.867 0)
@@ -3097,7 +3097,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "C1") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -3106,7 +3106,7 @@
   (symbol (lib_id "Diode:1N4002") (at 207.01 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 77ae4c2f-bfde-4706-8c8f-54930acb4c80)
-    (property "Reference" "D1" (at 207.01 68.1736 0)
+    (property "Reference" "D5" (at 207.01 68.1736 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4002" (at 207.01 70.485 0)
@@ -3123,7 +3123,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "D1") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -3164,7 +3164,7 @@
   (symbol (lib_id "Device:R_US") (at 29.21 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 867fafcf-dc28-4c25-a5da-e7237ef26026)
-    (property "Reference" "R9" (at 34.417 99.06 90)
+    (property "Reference" "Rb1" (at 34.417 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1400" (at 32.1056 99.06 90)
@@ -3181,7 +3181,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "R9") (unit 1)
+          (reference "Rb1") (unit 1)
         )
       )
     )
@@ -3216,7 +3216,7 @@
   (symbol (lib_id "Device:R_US") (at 45.72 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9f2923ff-5acf-40cf-8bd2-3d6d2b50b44d)
-    (property "Reference" "R11" (at 50.927 99.06 90)
+    (property "Reference" "Rb2" (at 50.927 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1400" (at 48.6156 99.06 90)
@@ -3233,7 +3233,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "R11") (unit 1)
+          (reference "Rb2") (unit 1)
         )
       )
     )
@@ -3294,7 +3294,7 @@
   (symbol (lib_id "KiCad testing-rescue:CP1-Device") (at 113.03 41.91 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e6e5e477-57ea-46d3-8bd5-d71c771ff446)
-    (property "Reference" "C9" (at 111.8616 38.989 0)
+    (property "Reference" "C2" (at 111.8616 38.989 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10uF" (at 114.173 38.989 0)
@@ -3311,7 +3311,7 @@
     (instances
       (project "KiCad testing"
         (path "/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30"
-          (reference "C9") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
