@@ -1810,7 +1810,7 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "+DCDC_Load" (shape input) (at 251.46 81.28 0) (fields_autoplaced)
+  (global_label "+DCDC_Load" (shape output) (at 251.46 81.28 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 9a72cd19-ee2c-4fb8-aac0-4c9386cf87b2)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 265.8861 81.28 0)
