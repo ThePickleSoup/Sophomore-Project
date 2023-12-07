@@ -1609,11 +1609,6 @@
     (uuid ff41fb41-13b0-4549-a035-a57a373f6823)
   )
 
-  (label "Remove unnecessary parts" (at 138.43 115.57 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid cc611fad-4c62-41a5-be4c-5336723e7a6c)
-  )
-
   (global_label "PWM_Low" (shape output) (at 25.4 52.07 180)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 072a453f-1560-4e3c-bb5c-6ec0b9842a7b)
