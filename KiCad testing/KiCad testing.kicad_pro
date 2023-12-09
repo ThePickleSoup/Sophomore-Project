@@ -1,6 +1,26 @@
 {
   "board": {
-    "3dviewports": [],
+    "3dviewports": [
+      {
+        "name": "Home",
+        "ww": 1.0,
+        "wx": 1.2035181522369385,
+        "wy": 4.673645496368408,
+        "wz": -21.5698299407959,
+        "xw": 0.0,
+        "xx": 0.6427878737449646,
+        "xy": -0.49240392446517944,
+        "xz": 0.5868237018585205,
+        "yw": 0.0,
+        "yx": 0.7660441994667053,
+        "yy": 0.4131762385368347,
+        "yz": -0.49240392446517944,
+        "zw": 0.0,
+        "zx": 0.0,
+        "zy": 0.7660441994667053,
+        "zz": 0.6427878737449646
+      }
+    ],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.09999999999999999,
@@ -48,7 +68,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -165,8 +191,17 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -177,7 +212,15 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "pin_not_driven|546100|304800|c7fd16f7-414f-406d-b62a-d3d41371a93c|00000000-0000-0000-0000-000000000000|||",
+      "pin_not_driven|546100|406400|67d553dd-50e3-4dc0-b022-da251eede5fe|00000000-0000-0000-0000-000000000000|||",
+      "pin_to_pin|990600|1206500|e0e1de80-56b5-4337-8237-abfc82689b24|5f405005-180f-4a1d-8efa-fb3176cd2c7e|/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30|/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30|/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30",
+      "pin_to_pin|990600|1206500|e0e1de80-56b5-4337-8237-abfc82689b24|c24fd86f-c8da-45ab-a0f9-ff47b82b534a|/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30|/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30|/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30",
+      "pin_to_pin|990600|571500|c24fd86f-c8da-45ab-a0f9-ff47b82b534a|5f405005-180f-4a1d-8efa-fb3176cd2c7e|/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30|/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30|/7cafa5f9-ca51-4b5e-ba3d-0c99ad1b0c30",
+      "power_pin_not_driven|393700|203200|d46e660d-9820-4fb7-b466-871c1c6b1385|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|393700|736600|d0ec52d2-0202-4461-81b7-be07a753f2d2|00000000-0000-0000-0000-000000000000|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -375,7 +418,7 @@
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
-      "pin_not_connected": "error",
+      "pin_not_connected": "warning",
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
@@ -457,6 +500,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
