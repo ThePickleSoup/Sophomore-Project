@@ -7,5 +7,7 @@ We are working on designing a PV-Battery Integrated Energy Source.
 My role in the group is Designer. 
 My tasks are to create the code and CAD deisgns for the project.
 
+As Designer, I have included the two reports required by the course to turn in for a grade. Reading them is not necessary.
+
 Please view the git repository at: https://github.com/ThePickleSoup/Sophomore-Project
 It's completely free!
