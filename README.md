@@ -18,7 +18,7 @@ Tasks for PCB design
     > Done. Using KiCad
   
   Design it(?)                            
-    > Incomplete
+    > Done. Prototype design was completed and presented. Was not milled.
 
 Tasks for CAD Design
   
